@@ -1,0 +1,275 @@
+/* For Headings */
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+/* For Body */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --light-gray-color: #adadad;
+  --primary-color: #0a0a0b;
+  --secondary-color: #2e3038;
+  --btn-color: #fbe850;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+  font-size: 100%;
+  font-family: "Prata", sans-serif;
+  background: var(--primary-color);
+  color: var(--white-color);
+  position: relative;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+p {
+  color: var(--light-gray-color);
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-family: "Inter", sans-serif;
+}
+
+.main-container {
+  max-width: 1140px;
+  margin: 0px auto;
+  width: 100%;
+  position: relative;
+}
+
+/* Scrollbar Styles  */
+::-webkit-scrollbar {
+  background: var(--light-gray-color);
+  border-radius: 4px;
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--very-dark-gray-color);
+  border-radius: 4px;
+}
+
+/* Header Styles */
+.header {
+  height: 100vh;
+  background-color: var(--primary-color);
+}
+
+.navbar {
+  width: 100%;
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px auto;
+}
+
+.navbar ul {
+  margin: 10px 10px 10px 0px;
+}
+
+.navbar li {
+  margin: 12px;
+}
+
+.menu a {
+  font-family: "Inter", sans-serif;
+}
+
+.get-in-touch-btn {
+  background-color: var(--btn-color);
+  color: var(--black-color);
+  padding: 12px 20px;
+  text-align: center;
+  width: 150px;
+}
+
+.navbar ul a:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 40%;
+  border-bottom: 2px solid var(--white-color);
+}
+
+.logo {
+  z-index: 5;
+  position: relative;
+}
+
+.showcase {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 80px 0px 100px 0px;
+}
+
+.showcase h1 {
+  font-size: 3.12rem;
+  line-height: 4.5rem;
+}
+
+.showcase p {
+  padding-top: 20px;
+}
+
+.brands-holder {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  background: none;
+  border: none;
+  z-index: 10;
+  transition: all 0.25s;
+  display: none;
+  outline: none;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: var(--white-color);
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* Section One */
+.section-one {
+  padding-bottom: 80px;
+}
+
+.section-one h2 {
+  padding-top: 20px;
+}
+
+.section-one p {
+  padding-top: 15px;
+}
+
+/* Section Two */
+.section-two {
+  background-color: var(--secondary-color);
+  padding: 60px 0px;
+}
+
+.section-two p {
+  padding-top: 20px;
+}
+
+.section-two article:last-child p:first-child {
+  padding-top: 0px;
+}
+
+.grid-2-col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+
+/* Section Three */
+.section-three {
+  padding: 80px 0px;
+}
+
+.section-three > div {
+  width: 50%;
+}
+
+.section-three p {
+  padding-top: 20px;
+}
+
+.section-three a {
+  display: block;
+  margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 30px 0px;
+  background-color: var(--secondary-color);
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-container li {
+  margin-left: 15px;
+}
