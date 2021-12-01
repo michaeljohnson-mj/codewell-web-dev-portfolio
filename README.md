@@ -44,5 +44,3 @@ Users should be able to:
 ## Author
 
 - Website - [https://www.michaeljohnson.tech](https://www.michaeljohnson.tech)
-- Frontend Mentor - [https://www.frontendmentor.io/profile/michaeljohnson-mj](https://www.frontendmentor.io/profile/michaeljohnson-mj)
-

@@ -10,6 +10,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>Codewell | Web Dev Portfolio</title>
@@ -19,7 +25,7 @@
       <!-- Header -->
       <header class="header main-container">
         <nav class="navbar">
-          <a><h3>Jonathan Specter</h3></a>
+          <a class="logo"><h3>Jonathan Specter</h3></a>
 
           <ul class="menu">
             <li><a href="#">Articles</a></li>
@@ -29,7 +35,25 @@
           </ul>
 
           <a class="get-in-touch-btn" href="#">Get in touch</a>
+
+          <!-- Hamburger Menu -->
+          <button type="button" class="hamburger" id="menu-btn">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
         </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden" id="menu">
+          <ul>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Chats</a></li>
+            <li><a href="#">Awards</a></li>
+            <li><a href="#">About</a></li>
+            <li><a class="get-in-touch-btn" href="#">Get in touch</a></li>
+          </ul>
+        </div>
 
         <div class="showcase">
           <h1>Helping companies build better, scalable software.</h1>
@@ -55,7 +79,7 @@
         <div class="grid-2-col">
           <article>
             <img src="./images/spense.png" alt="Spense Banner" />
-            <h2>Spense.com</h2>
+            <a href="#"><h2>Spense.com<i class="far fa-long-arrow-right font-icon"></i></h2></a>
             <p>
               Rethinking the way writers get paid, an open source platform
               designed to help writers focus more on writing, and less on
@@ -66,7 +90,7 @@
 
           <article>
             <img src="./images/yelpcamp.png" alt="YelpCamp Banner" />
-            <h2>YelpCamp.com</h2>
+            <a href="#"><h2>YelpCamp.com<i class="far fa-long-arrow-right font-icon"></i></h2></a>
             <p>
               Allowing backpack travelers to perfectly plan their trip through
               an open-source platform similiar to TripAdvisor. With over 1m MAU,
